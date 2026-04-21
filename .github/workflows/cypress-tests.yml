@@ -14,4 +14,3 @@ jobs:
         
       - name: Run E2E tests
         run: yarn cypress run
-      
