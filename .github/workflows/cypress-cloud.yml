@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Get code
         uses: actions/checkout@v6.0.2
-
+        
       - name: Cypress run
         uses: cypress-io/github-action@v6.5.0
         with:
@@ -22,7 +22,7 @@ jobs:
             record: true
             group: UI Electron
             spec: ${{ github.event.inputs.spec }}
-          env:
+        env:
             CYPRESS_RECORD_KEY: df62ab6c-d4a9-49eb-a922-68d3cd3aa0e9
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             
