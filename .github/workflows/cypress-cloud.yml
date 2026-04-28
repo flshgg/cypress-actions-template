@@ -57,7 +57,7 @@ jobs:
     needs: Cypress-e2e-electron
     runs-on: ubuntu-latest
     container: 
-      image: cypress/browsers:node-20.18.0-chrome-130.0.6723.69-1-ff-131.0.3-edge-130.0.2849.52-1
+      image: cypress/browsers:node-24.15.0-chrome-147.0.7727.101-1-ff-150.0-edge-147.0.3912.60-1
       options: --user 1001 --ipc=host
     strategy:
       fail-fast: false
