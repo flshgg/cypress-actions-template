@@ -54,7 +54,7 @@ jobs:
             CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}            
   Cypress-e2e-firefox:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     container: 
       image: cypress/browsers:node-20.18.0-chrome-130.0.6723.69-1-ff-131.0.3-edge-130.0.2849.52-1
       options: --user 1001 --ipc=host
