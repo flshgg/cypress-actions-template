@@ -11,7 +11,7 @@ jobs:
   Cypress-e2e-electron:
     runs-on: ubuntu-latest
     container: 
-      image: cypress/browsers:node-20.18.0-chrome-130.0.6723.69-1-ff-131.0.3-edge-130.0.2849.52-1
+      image: cypress/browsers:node-22.14.0-chrome-133.0.6943.126-1-ff-135.0.1-edge-133.0.3065.82-1
       options: --user 1001 --ipc=host
     strategy:
       fail-fast: false
@@ -34,7 +34,7 @@ jobs:
     needs: Cypress-e2e-electron
     runs-on: ubuntu-latest
     container: 
-      image: cypress/browsers:node-20.18.0-chrome-130.0.6723.69-1-ff-131.0.3-edge-130.0.2849.52-1
+      image: cypress/browsers:node-22.14.0-chrome-133.0.6943.126-1-ff-135.0.1-edge-133.0.3065.82-1
       options: --user 1001 --ipc=host
     strategy:
       fail-fast: false
@@ -56,7 +56,7 @@ jobs:
   Cypress-e2e-firefox:
     runs-on: ubuntu-latest
     container: 
-      image: cypress/browsers:node-20.18.0-chrome-130.0.6723.69-1-ff-131.0.3-edge-130.0.2849.52-1
+      image: cypress/browsers:node-22.14.0-chrome-133.0.6943.126-1-ff-135.0.1-edge-133.0.3065.82-1
       options: --user 1001 --ipc=host
     strategy:
       fail-fast: false
